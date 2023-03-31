@@ -1,0 +1,372 @@
+<!-- 
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>testertest</title>
+    </head>
+    <body>
+        <script>
+            // document.write(document.title);
+            // document.write("<br>");
+            // document.write(document.title.isNaN());
+            // document.write("<br>");
+            // document.write(document.title.replace('ter','est'));
+            // document.write("<br>");
+            // document.write(document.title.substring(0,2));
+            // document.write("<br>");
+            // document.write(document.title.split('e'));
+            // document.write("<br>");
+            // document.write(document.lastModified);
+            // document.write("<br>");
+            // document.write(document.URL); 
+            // document.write("<br>");
+            // document.write(document.domain);
+
+
+            // Math object
+
+            // document.write("Math.PI " + Math.PI);
+            // document.write("<br>");
+            // document.write("Math.round " + Math.round(2.5));
+            // document.write("<br>");
+            // document.write("Math.sqrt " + Math.sqrt(4));
+            // document.write("<br>");
+            // document.write("Math.ceil " + Math.ceil(4.5));
+            // document.write("<br>");
+            // document.write("Math.floor " + Math.floor(4.7));
+            // document.write("<br>");
+            // document.write("Math.random() " + Math.floor(Math.random() * 10));
+
+            // Date object
+            
+            // document.write(new Date());
+            // document.write("<br>");
+            // document.write(new Date().toString());
+            // document.write("<br>");
+            // document.write(new Date().getDate());
+            // document.write("<br>");
+            // document.write(new Date().getDay());
+            // document.write("<br>");
+            // document.write(new Date().getFullYear());
+            // document.write("<br>");
+            // document.write(new Date().getHours());
+            // document.write("<br>");
+            // document.write(new Date().getMinutes());
+            // document.write("<br>");
+            // document.write(new Date().getTime());
+        </script>
+    </body>
+</html>
+
+ -->
+
+<!-- <!DOCTYPE html>
+<html lang="en"> 
+    <body>  -->
+        <!-- <div id="page">  -->
+            <!-- <hl id="header">List</hl> 
+            <h2>Buy groceries</h2> 
+                <ul> 
+                    <li id="one" class="hot"><em>fresh</em> figs</li> 
+                    <li id="two" class="hot">pine nuts</li> 
+                    <li id="three" class="hot">honey</li > 
+                    <li id="four">balsamic vinegar</li> 
+                </ul>  -->
+
+                <!-- <label id="ad">Create a username:</label> -->
+                <!-- <label id="ad">Create a username:</label> -->
+                <!-- <input type="text" id="username" /> -->
+                <!-- <input type="password" id="pwd" /> -->
+                
+                <!-- <label id="feedback"></label> -->
+            <script>
+
+                // function demo(){
+                //     var leng = el.textContent.length;
+                //     document.write(leng);
+                //     el.innerHTML = leng;
+                // }
+
+                // var el = document.getElementById("ad");
+                // el.addEventListener('mousedown', demo, false);
+            
+            /*
+
+                function checkUsername(){
+                    if(el.value.length < 5){
+                        elMs.textContent = "Not long enough, yet...";
+                    } else{
+                        elMs.textContent = "";
+                    }
+                }
+
+                function tipUsername(){
+                    elMs.innerHTML = "Username must be at lease 5 characters";
+                }
+
+                var el = document.getElementById("username");
+                var elMs = document.getElementById("feedback");
+
+                el.addEventListener('focus', tipUsername, false);
+                el.addEventListener('blur', checkUsername, false);
+            */   
+                // var secLi = document.getElementById('two');
+                // var secLiTxt = secLi.firstChild.nodeValue;
+                // var newSecLiTxt = secLiTxt.replace("pine nuts", "Kale");
+                // secLi.firstChild.nodeValue = newSecLiTxt;
+                // document.write(newSecLiTxt);
+                // document.write(newSecLiTxt.firstChild.nodeValue);
+                // var ul = document.getElementsByTagName('ul')[0];
+                // var firstLi = ul.childNodes[1];
+                // document.write(firstLi);
+                // var liFirstLi = firstLi.firstChild.nextSibling.nodeValue;
+                // document.write(liFirstLi);
+                // var firstli = document.getElementById("one");
+                // document.write(firstli.textContent);
+                // firstli.textContent = "first";
+
+                // var liItems = document.getElementsByTagName("li");
+                // document.write(liItems[0].textContent);
+                // document.write(liItems[1].textContent);
+                // document.write(liItems[2].textContent);
+                // document.write(liItems[3].textContent);
+                // liItems[0].textContent = "one";
+                // liItems[1].textContent = "two";
+                // liItems[2].textContent = "three";
+                // liItems[3].textContent = "four";
+
+                // document.getElementById("four").className = 'hot';
+                // document.getElementsByClassName("hot")[3].style.backgroundColor = "blue";
+                // document.write(document.querySelectorAll("li.hot")[1].textContent);
+                // document.write(document.getElementsByTagName("li")[1].textContent);
+                // document.write(document.getElementsByClassName("hot")[2].textContent);
+                
+                // var liClass = document.querySelectorAll("li.hot");
+                // for(i = 0; i < liClass.length; i++){
+                //     liClass[i].style.backgroundColor = "#33"+i+i+"66";
+                // }
+
+                
+                // var ul = document.getElementsByTagName('ul')[0];
+                // document.write(ul.childNodes[5].textContent);
+
+                // var div = document.getElementById("page");
+                // var p = document.createElement("p");
+                // var pText = document.createTextNode("this is normal paragraph.");
+                // p.appendChild(pText);
+                // div.appendChild(p);
+                // document.write(document.getElementById("page"));
+           </script>  
+            
+        <!-- </div>  -->
+    <!-- </body> 
+</html> -->
+
+<!-- TO DO LIST -->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TO DO LIST</title>
+    </head>
+    <body>
+        <lable>Item</lable>
+        <input type="text" id="item" />
+        <button id="add">Add</button>
+        <label id="info"></label>
+        <ul id="item-list">
+
+        </ul>
+    </body>
+    <script>
+        var el = document.getElementById('add');
+        var item = document.getElementById('item');
+        var ul = document.getElementById('item-list');
+    
+            el.addEventListener('click', addItem, false);
+            
+        
+            
+        
+        function addItem(e){
+            
+            if(item.value != ''){
+                document.getElementById('info').textContent = '';    
+                var del = document.createElement("button");
+                del.setAttribute("id","delitem");
+                var delText = document.createTextNode("Remove");
+                var li = document.createElement('li');
+                var text = document.createTextNode(item.value);
+                console.log(text);
+                del.appendChild(delText);
+                li.appendChild(text);
+                li.appendChild(del);
+                ul.appendChild(li);
+
+                item.value = '';
+                
+
+                del.addEventListener('click', delItem, false);
+            
+            } else{
+                document.getElementById('info').textContent = 'Plase insert some text info input field then add';
+            }
+        }
+
+        function delItem(){
+            var pn = this.parentNode;
+            pn.remove();
+        }
+        
+    </script>
+</html>
+
+<!-- Mouseover -->
+
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <title>Mouse</title>
+    </head>
+    <body id="body">
+        <input type="text" id="sx"/>
+        <input type="text" id="sy"/>
+        <input type="text" id="px"/>
+        <input type="text" id="py"/>
+        <input type="text" id="cx"/>
+        <input type="text" id="cy"/>
+    </body>
+    <script>
+        var sx = document.getElementById("sx");
+        var sy = document.getElementById("sy");
+        var px = document.getElementById("px");
+        var py = document.getElementById("py");
+        var cx = document.getElementById("cx");
+        var cy = document.getElementById("cy");
+
+        var el = document.getElementById("body");
+        el.addEventListener('mousemove', check, false);
+
+        function check(e){
+            sx.value = e.screenX;
+            sy.value = e.screenY;
+            px.value = e.pageX;
+            py.value = e.pageY;
+            cx.value = e.clientX;
+            cy.value = e.clientY;
+        }
+    </script>
+</html> -->
+
+
+<!-- Calculator -->
+
+<!-- 
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>calculator</title>
+    </head>
+    <body>
+        <input type="text" id='inputValue' value="0"/>
+        <div>
+            <button data-number="num">0</button>
+            <button data-number="num">1</button>
+            <button data-number="num">2</button>
+            <button data-number="num">3</button>
+            <button data-number="num">4</button>
+            <br>
+            <button data-number="num">5</button>
+            <button data-number="num">6</button>
+            <button data-number="num">7</button>
+            <button data-number="num">8</button>
+            <button data-number="num">9</button>
+            <br>
+            <button data-dot="dot">.</button>
+            <button data-op="optn">+</button>
+            <button data-op="optn">-</button>
+            <button data-op="optn">*</button>
+            <button data-op="optn">/ </button>
+            <button data-eql="eql">=</button>
+            <button data-clr="clr">AC</button>
+            
+        </div>
+        <script>
+            var btnClick, num1, num2, optSymbol;
+            var ipvalue = document.getElementById('inputValue');
+
+            btnClick = document.querySelector('button').parentNode; 
+
+            btnClick.addEventListener('click', addInput, false);
+            
+            function addInput(e){
+                // console.log(e.target.matches('button'));
+                if(e.target.matches('button')){
+                    // console.log(e.target.innerText);
+                    
+                    if(e.target.dataset.number === 'num'){
+                        if(ipvalue.value == '0'){
+                        ipvalue.value = e.target.innerText;    
+                        } else{
+                            ipvalue.value += e.target.innerText;
+                        }
+                        return;
+                            // console.log(e.target.innerText);
+                    }
+                    if(e.target.dataset.op === 'optn'){
+                        num1 = ipvalue.value;
+                        optSymbol= e.target.innerText;
+                        ipvalue.setAttribute('data-symol', optSymbol);
+                        ipvalue.setAttribute('data-num1',num1);
+                        ipvalue.value = '';
+                        return;
+                        // console.log(e.target.innerText);
+
+                    }
+                    if(e.target.dataset.eql === 'eql'){
+                        num2 = ipvalue.value;
+                        ipvalue.setAttribute('data-num2', num2);
+                        num1 = parseFloat(num1);
+                        num2 = parseFloat(num2);
+                        calculator(num1, num2, optSymbol);
+                        return;
+                        // console.log(e.target.innerText);
+                    }
+                    if(e.target.dataset.dot === 'dot'){
+                        ipvalue.value += e.target.innerText; 
+                        return;
+                        // console.log(e.target.innerText);
+                    }
+                    if(e.target.dataset.clr === 'clr'){
+                        ipvalue.value = '0'; 
+                        return;
+                    }
+                    
+
+                    
+                }
+            }
+
+            function calculator(num1, num2, optSymbol){
+                   if(optSymbol === '+'){
+                    ipvalue.value = num1 + num2;
+                    return;
+                   } 
+                   if(optSymbol === '-'){
+                    ipvalue.value = num1 - num2;
+                    return;
+                   } 
+                   if(optSymbol === '*'){
+                    ipvalue.value = num1 * num2;
+                    return;
+                   } 
+                   if(optSymbol === '/'){
+                    ipvalue.value = num1 / num2;
+                    return;
+                   } 
+            }
+
+        </script>
+    </body>
+</html> -->
